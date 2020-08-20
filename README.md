@@ -2,7 +2,7 @@
 typora-copy-images-to: img
 ---
 
-# 20200818 开始学习RabbitMQ
+# 开始学习RabbitMQ
 ## 简单模式-simple
 
 <img src="./img/simple.jpg" style="zoom:80%;" />
@@ -536,5 +536,14 @@ class FibonacciRpcClient
 $fibonacci_rpc = new FibonacciRpcClient();
 $response = $fibonacci_rpc->call(30);
 echo ' [.] Got ', $response, "\n";
+```
+
+命令行执行：
+
+```shell 
+#启动服务
+php rpc_server.php
+#客户端发送请求
+php rpc_client.php
 ```
 
